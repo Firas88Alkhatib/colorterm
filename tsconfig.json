@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "src",
+    "declaration": true,
+    "esModuleInterop": true,
+    "inlineSourceMap": false,
+    "lib": ["esnext"],
+    "listEmittedFiles": false,
+    "listFiles": false,
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "pretty": true,
+    "resolveJsonModule": true,
+    "rootDir": "src",
+    "skipLibCheck": true,
+    "strict": true,
+    "traceResolution": false,
+    "typeRoots": ["./src/Types"],
+    "types": ["node"]
+  },
+  "exclude": ["node_modules", "lib"],
+  "include": ["src"]
+}

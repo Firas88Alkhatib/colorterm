@@ -1,0 +1,45 @@
+{
+  "name": "colorterm",
+  "version": "1.0.0",
+  "description": "Bring colors into your terminal",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/mjs/index.js",
+  "author": "Firas Alkhatib <firas88alkhatib@gmail.com>",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "import": "./lib/mjs/index.js",
+      "require": "./lib/cjs/index.js"
+    }
+  },
+  "typings": "./lib/mjs/index.d.ts",
+  "types": "./lib/mjs/index.d.ts",
+  "scripts": {
+    "build": "npm run buildmjs --silent && npm run buildcjs --silent && node ./config/copy.js",
+    "buildmjs": "tsc -p ./config/tsconfig-mjs.json",
+    "buildcjs": "tsc -p ./config/tsconfig-cjs.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Firas88Alkhatib/colorterm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Firas88Alkhatib/colorterm/issues"
+  },
+  "homepage": "https://github.com/Firas88Alkhatib/colorterm#readme",
+  "keywords": [
+    "ansi",
+    "color",
+    "colors",
+    "terminal",
+    "cnsole",
+    "node"
+  ],
+  "engines": {
+    "node": ">=0.1.90"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.14",
+    "typescript": "^4.5.5"
+  }
+}
